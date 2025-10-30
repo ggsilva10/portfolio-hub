@@ -2,7 +2,7 @@
 
 Este é o repositório do meu portfólio pessoal, projetado e construído para ser o hub central da minha jornada como Desenvolvedor Full-Stack.
 
-[![Visitar o Site](https://img.shields.io/badge/Acessar%20Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://[SEU-LINK-DA-VERCEL-AQUI].vercel.app/)
+[![Visitar o Site](https://img.shields.io/badge/Acessar%20Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://portfolio-hub-blond-three.vercel.app/)
 
 ---
 
@@ -41,7 +41,7 @@ Este projeto foi construído do zero utilizando as seguintes tecnologias:
 
 Para ver a lista completa de projetos que estou desenvolvendo (Back-end, Front-end e Full-Stack), acesse a página de roadmap no site.
 
-* **[Acessar o Roadmap de Projetos](https://[SEU-LINK-DA-VERCEL-AQUI].vercel.app/roadmap)**
+* **[Acessar o Roadmap de Projetos](https://portfolio-hub-blond-three.vercel.app/roadmap)**
 
 ---
 
