@@ -16,10 +16,10 @@ O design foi feito com foco em "Mobile-First", e a estrutura segue as melhores p
 
 Aqui está uma prévia de como o site se parece:
 
-**Página Home:**
+### **Página Home:**
 <img src=".github/screenshots/home.png" alt="Screenshot da Página Home" width="80%">
 
-**Roadmap de Projetos:**
+### **Roadmap de Projetos:**
 <img src=".github/screenshots/roadmap.png" alt="Screenshot da Página Roadmap" width="80%">
 
 ---
