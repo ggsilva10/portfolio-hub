@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Projeto 1: FilmFinder (Front-End)',
     description: 'Aplicação Front-end para consumir a API REST do TMDB. Foco em gerenciamento de estado (Zustand) e requisições assíncronas com TypeScript.',
-    githubLink: 'https://github.com/ggsilva10/filmfinder', // (Exemplo)
+    githubLink: 'https://github.com/ggsilva10/film-finder', // (Exemplo)
     status: 'Em Andamento' as const, // Use 'as const' para o TypeScript
   },
   {
