@@ -30,7 +30,7 @@ const projects = [
   {
     title: 'Projeto TCC: Controle de Hábitos (Python)',
     description: 'Aplicação acadêmica desenvolvida em Python e Flask, com API RESTful um sistema web completo para ajudar usuários a monitorar e construir hábitos positivos, com funcionalidades de cadastro, login e gerenciamento de banco de dados.',
-    githubLink: 'https:github.com/ggsilva10/Projeto-de-Software.git',
+    githubLink: 'https://github.com/ggsilva10/Projeto-de-Software.git',
     status: 'Concluído' as const,
     demoLink:  '#'// Se tiver um link da demo, adicione aqui
   },
