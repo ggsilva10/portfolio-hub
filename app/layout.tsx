@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
-
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer'; // 1. Importe o Footer
+import './globals.css'; 
+import Header from '@/components/Header'; 
+import { Footer } from '@/components/Footer';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Portfólio de [Seu Nome]',
-  description: 'Desenvolvedor Full-Stack em busca de desafios.',
+  title: 'Gustavo Gonçalves | Portfolio',
+  description: 'Full-Stack Developer focused on modern web solutions.',
 };
 
 export default function RootLayout({
@@ -18,20 +18,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      {/* Adicionamos 'flex flex-col min-h-screen' ao body */}
-      {/* Isso é um truque de flexbox para garantir que o Footer
-          "grude" no fim da página, mesmo em páginas com pouco conteúdo. */}
-      <body className={`${inter.className} bg-zinc-950 text-zinc-50 flex flex-col min-h-screen`}>
-        
-        <Header />
-
-        {/* 'flex-grow': Faz o conteúdo principal "empurrar" o footer para baixo */}
-        <main className="container mx-auto py-8 flex-grow">
-          {children}
-        </main>
-        
-        <Footer /> {/* 2. Adicione o Footer aqui */}
+    <html lang="en" suppressHydrationWarning>
+      <body 
+        className={`${inter.className} 
+        bg-white dark:bg-zinc-950 
+        text-zinc-900 dark:text-zinc-50 
+        flex flex-col min-h-screen transition-colors duration-300`}
+      >
+        <ThemeProvider>
+          <Header /> 
+          
+          <main className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 flex-grow">
+            {children}
+          </main>
+          
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

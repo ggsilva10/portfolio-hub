@@ -1,38 +1,38 @@
 import { ProjectCard } from '@/components/ProjectCard';
 
-// 1. Definição dos projetos
 const projects = [
   {
     title: 'Projeto 1: FilmFinder (Front-End)',
-    description: 'Aplicação Front-end para consumir a API REST do TMDB. Foco em gerenciamento de estado (Zustand) e requisições assíncronas com TypeScript.',
-    githubLink: 'https://github.com/ggsilva10/film-finder', // (Exemplo)
-    status: 'Em Andamento' as const, // Use 'as const' para o TypeScript
+    description: 'A responsive dashboard for searching and exploring movies, built with Next.js, TypeScript, and Zustand for state management.',
+    githubLink: 'https://github.com/ggsilva10/film-finder',
+    liveDemoLink:'https://film-finder-nu.vercel.app/',
+    status: 'Completed' as const,
   },
   {
     title: 'Projeto 2: TaskFlow API (Back-End)',
-    description: 'API RESTful para um gestor de tarefas. Foco em arquitetura Node.js, autenticação (JWT) e manipulação de banco de dados (PostgreSQL com Prisma).',
+    description: 'API RESTful API for a task manager. Focus on Node.js, SWT authentication, and database management (PostgreSQL with Prisma).',
     githubLink: 'https://github.com/ggsilva10/taskflow-api',
-    status: 'Planejado' as const,
+    status: 'Planned' as const,
   },
   {
     title: 'Projeto 3: BookMark (Full-Stack)',
-    description: 'Sistema de agendamentos. Foco na integração Full-Stack (React + API do Projeto 2), fluxo de autenticação e regras de negócio.',
+    description: 'A full-stack service scheduling system, integrating the React front-end with the TaskFlow API and busmiess logic .',
     githubLink: 'https://github.com/ggsilva10/bookmark',
-    status: 'Planejado' as const,
+    status: 'Planned' as const,
   },
   {
     title: 'Projeto 4: Deep Dive (DevOps/Cache)',
-    description: 'Evolução da API (Projeto 2). Foco em performance com caching (Redis) e na criação de um pipeline de deploy (CI/CD com Docker e GitHub Actions).',
+    description: 'Evolving the TaskFlow API. Focus on performace with Redis caching and building a CI/CD pipeline (Docker & GitHub Actions)',
     githubLink: 'https://github.com/ggsilva10/taskflow-api',
-    status: 'Planejado' as const,
+    status: 'Planned' as const,
   },
  
   {
     title: 'Projeto TCC: Controle de Hábitos (Python)',
-    description: 'Aplicação acadêmica desenvolvida em Python e Flask, com API RESTful um sistema web completo para ajudar usuários a monitorar e construir hábitos positivos, com funcionalidades de cadastro, login e gerenciamento de banco de dados.',
+    description: 'Academic application developed in Python/Flask, featuring a RESTful API for [purpose] and database management.',
     githubLink: 'https://github.com/ggsilva10/Projeto-de-Software.git',
-    status: 'Concluído' as const,
-    demoLink:  '#'// Se tiver um link da demo, adicione aqui
+    status: 'Completed' as const,
+    demoLink:  '#'
   },
 ];
 
@@ -40,7 +40,7 @@ export default function RoadmapPage() {
   return (
     <section>
       <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center">
-        Roadmap de Projetos
+        Project Roadmap
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -51,7 +51,7 @@ export default function RoadmapPage() {
             title={project.title}
             description={project.description}
             githubLink={project.githubLink}
-            demoLink={project.demoLink}
+            liveDemoLink={project.liveDemoLink}
             status={project.status}
           />
         ))}
