@@ -7,7 +7,7 @@ export const Footer = () => {
         
         {/* Copyright */}
         <p className="text-sm">
-          © {new Date().getFullYear()} Gustavo Gonçalves. Todos os direitos reservados.
+          © {new Date().getFullYear()} Gustavo Gonçalves. All rights reserved.
         </p>
 
         <div className="flex gap-6 mt-4 md:mt-0">

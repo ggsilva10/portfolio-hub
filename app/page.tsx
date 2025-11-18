@@ -1,8 +1,8 @@
 import { FaChevronDown, FaGithub, FaLinux, FaDocker } from "react-icons/fa";
 import {
-  SiPython, 
-  SiFlask, 
-  SiNodedotjs, 
+  SiPython,
+  SiFlask,
+  SiNodedotjs,
   SiMongodb, 
   SiPostgresql, 
   SiJavascript,
@@ -63,7 +63,7 @@ export default function Home() {
             href="/roadmap"
             className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
           >
-            Roadmap de Projetos
+            Roadmap Projects
           </a>
           <a
             href="https://github.com/ggsilva10"

@@ -9,7 +9,7 @@ export default function Header() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         
         <Link href="/" className="text-xl font-bold text-zinc-900 dark:text-white">
-          Gustavo Gonçalves
+          My portifolio
         </Link>
 
         <div className="flex items-center gap-6">
