@@ -1,72 +1,73 @@
-# 🚀 Meu Portfólio Full-Stack (portfolio-hub)
+# 🚀 Full-Stack Portfolio (portfolio-hub)
 
-Este é o repositório do meu portfólio pessoal, projetado e construído para ser o hub central da minha jornada como Desenvolvedor Full-Stack.
+This is the repository for my personal portfolio, designed and built to be the central hub of my journey as a Full-Stack Developer.
 
-[![Visitar o Site](https://img.shields.io/badge/Acessar%20Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://portfolio-hub-blond-three.vercel.app/)
-
----
-
-## 🎯 Sobre o Projeto
-
-Este não é um portfólio estático. O objetivo principal deste projeto é servir como um **Roadmap Público** do meu aprendizado. A página "Roadmap de Projetos" documenta os projetos que estou construindo, meu progresso e as tecnologias que estou dominando.
-
-O design foi feito com foco em "Mobile-First", e a estrutura segue as melhores práticas do Next.js App Router.
-
-## 📸 Screenshots
-
-Aqui está uma prévia de como o site se parece:
-
-### **Página Home:**
-<img src=".github/screenshots/home.png" alt="Screenshot da Página Home" width="80%">
-
-### **Roadmap de Projetos:**
-<img src=".github/screenshots/roadmap.png" alt="Screenshot da Página Roadmap" width="80%">
+[![View Live](https://img.shields.io/badge/View%20Live-Vercel-black?style=for-the-badge&logo=vercel)](https://portfolio-hub-blond-three.vercel.app/)
 
 ---
 
-## 🛠️ Stack Tecnológica
+## 🎯 About The Project
 
-Este projeto foi construído do zero utilizando as seguintes tecnologias:
+This is not a static portfolio. The main goal of this project is to serve as a **Public Roadmap** of my learning. The "Project Roadmap" page documents the projects I am building, my progress, and the technologies I am mastering.
 
-* **Framework:** [Next.js (v16)](https://nextjs.org/) (com App Router)
-* **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
-* **Estilização:** [TailwindCSS (v4)](https://tailwindcss.com/)
-* **Componentes:** [React](https://reactjs.org/)
-* **Ícones:** [React Icons](https://react-icons.github.io/react-icons/)
-* **Hospedagem:** [Vercel](https://vercel.com/)
+The design is fully **responsive** (Mobile-First) and features a **Light/Dark Mode** toggle to ensure a great viewing experience in any lighting condition. The structure follows modern Next.js App Router best practices.
 
----
+## 📸 Demo & Screenshots
 
-## 🗺️ Roadmap de Projetos
+Here is a preview of the site in action, featuring dark mode toggle:
 
-Para ver a lista completa de projetos que estou desenvolvendo (Back-end, Front-end e Full-Stack), acesse a página de roadmap no site.
+### Home Page (Demo):
+<img src=".github/screenshots/home-preview.gif" alt="Home Page Animated Demo" width="80%">
 
-* **[Acessar o Roadmap de Projetos](https://portfolio-hub-blond-three.vercel.app/roadmap)**
+### Project Roadmap (Demo):
+<img src=".github/screenshots/roadmap-preview.gif" alt="Project Roadmap Animated Demo" width="80%">
 
 ---
 
-## 🏁 Rodando o Projeto Localmente
+## 🛠️ Tech Stack
 
-Se você quiser rodar este projeto no seu ambiente local, siga os passos abaixo:
+This project was built from scratch using the following technologies:
 
-1.  **Clone o repositório:**
+* **Framework:** [Next.js (v16)](https://nextjs.org/) (with App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [TailwindCSS (v4)](https://tailwindcss.com/)
+* **Components:** [React](https://reactjs.org/)
+* **Theme (Dark Mode):** [next-themes](https://github.com/pacocoursey/next-themes)
+* **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+* **Deployment:** [Vercel](https://vercel.com/)
+
+---
+
+## 🗺️ Project Roadmap
+
+To see the full list of projects I'm developing (Back-end, Front-end, and Full-Stack), visit the roadmap page on the live site.
+
+* **[View the Project Roadmap](https://portfolio-hub-blond-three.vercel.app/roadmap)**
+
+---
+
+## 🏁 Running The Project Locally
+
+If you want to run this project in your local environment, follow the steps below:
+
+1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/ggsilva10/portfolio-hub.git](https://github.com/ggsilva10/portfolio-hub.git)
     ```
 
-2.  **Entre na pasta do projeto:**
+2.  **Enter the project directory:**
     ```bash
     cd portfolio-hub
     ```
 
-3.  **Instale as dependências:**
+3.  **Install the dependencies:**
     ```bash
     npm install
     ```
 
-4.  **Rode o servidor de desenvolvimento:**
+4.  **Run the development server:**
     ```bash
     npm run dev
     ```
 
-5.  Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+5.  Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
