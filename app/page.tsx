@@ -99,11 +99,11 @@ export default function Home() {
             </p>
             <p>
               My academic background includes developing a complete software 
-              application using Python and Flask, where I was responsible for creating 
+              application using Python and Flask. At this project, I was responsible for creating 
               RESTful API endpoints and managing the database.
             </p>
             <p>
-              This portfolio is my technical roadmap. The goal is to demonstrate my 
+              This portfolio is my technical roadmap. The main goal of it is to demonstrate my 
               evolution in the React, Node.js, and TypeScript ecosystem by building 
               projects of increasing complexity.
             </p>

@@ -1,0 +1,75 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "TaskFlow API",
+    "description": "API RESTful para gerenciamento de tarefas com Node.js, Fastify, PostgreSQL e JWT.",
+    "version": "1.0.0"
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/users/register": {
+      "post": {
+        "summary": "Registra um novo usuário",
+        "tags": ["Usuários"],
+        "security": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "email": { "type": "string" },
+                  "password": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Usuário criado com sucesso" }
+        }
+      }
+    },
+    "/users/login": {
+      "post": {
+        "summary": "Autentica um usuário e retorna o Token JWT",
+        "tags": ["Usuários"],
+        "security": [],
+        "responses": {
+          "200": { "description": "Token gerado com sucesso" }
+        }
+      }
+    },
+    "/tasks": {
+      "get": {
+        "summary": "Lista todas as tarefas do usuário autenticado",
+        "tags": ["Tarefas"],
+        "responses": {
+          "200": { "description": "Lista de tarefas retornada" },
+          "401": { "description": "Não autorizado (Token inválido ou ausente)" }
+        }
+      },
+      "post": {
+        "summary": "Cria uma nova tarefa",
+        "tags": ["Tarefas"],
+        "responses": {
+          "201": { "description": "Tarefa criada" }
+        }
+      }
+    }
+  }
+}

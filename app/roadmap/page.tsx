@@ -1,61 +1,88 @@
 import { ProjectCard } from '@/components/ProjectCard';
 
+type ProjectCategory = 'Front-End' | 'Back-End';
+
 const projects = [
   {
-    title: 'Project 1: FilmFinder (Front-End)',
+    title: 'FilmFinder',
     description: 'A responsive dashboard for searching and exploring movies, built with Next.js, TypeScript, and Zustand for state management.',
     githubLink: 'https://github.com/ggsilva10/film-finder',
     liveDemoLink:'https://film-finder-nu.vercel.app/',
     status: 'Completed' as const,
+    category: 'Front-End' as ProjectCategory,
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind'],
   },
   {
-    title: 'Project 2: TaskFlow API (Back-End)',
-    description: 'API RESTful API for a task manager. Focus on Node.js, SWT authentication, and database management (PostgreSQL with Prisma).',
+    title: 'TaskFlow API',
+    description: 'API RESTful API for a task manager. Focus on Node.js, JWT authentication, and database management (PostgreSQL with Docker).',
     githubLink: 'https://github.com/ggsilva10/taskflow-api',
-    status: 'Planned' as const,
+    liveDemoLink: '/api-docs/taskflow',
+     demoType: 'swagger' as const,
+    status: 'Completed' as const,
+    category: 'Back-End' as ProjectCategory,
+    technologies: ['Node.js', 'Fastify', 'TypeScript', 'PostgreSQL', 'Docker'],
   },
   {
-    title: 'Project 3: BookMark (Full-Stack)',
-    description: 'A full-stack service scheduling system, integrating the React front-end with the TaskFlow API and busmiess logic .',
+    title: 'Price Tracker API (Microservices)',
+    description: 'An asynchronous e-commerce price tracking system. Built with a microservices architecture using Flask, Celery, and Redis to monitor price drops automatically. It features strategies to bypass anti-bot mechanisms and handles complex database concurrency.',
+    githubLink: 'https://github.com/ggsilva10/price-tracker',
+    liveDemoLink: '/api-docs/price-tracker',
+    demoType: 'swagger' as const,
+    status: 'Completed' as const,
+    category: 'Back-End' as ProjectCategory,
+    technologies: ['Python', 'Flask', 'Celery', 'Redis', 'PostgreSQL', 'Docker'],
+  },
+  {
+    title: 'BookMark',
+    description: 'A full-stack service scheduling system, integrating the React front-end with the TaskFlow API and business logic.',
     githubLink: 'https://github.com/ggsilva10/bookmark',
     status: 'Planned' as const,
+    category: 'Back-End' as ProjectCategory,
+    technologies: ['Next.js', 'React', 'Node.js', 'TypeScript', 'PostgreSQL'],
   },
   {
-    title: 'Project 4: Deep Dive (DevOps/Cache)',
-    description: 'Evolving the TaskFlow API. Focus on performace with Redis caching and building a CI/CD pipeline (Docker & GitHub Actions)',
+    title: 'Deep Dive',
+    description: 'Evolving the TaskFlow API. Focus on performace with Redis caching and building a CI/CD pipeline (Docker & GitHub Actions).',
     githubLink: 'https://github.com/ggsilva10/taskflow-api',
     status: 'Planned' as const,
+    category: 'Back-End' as ProjectCategory,
+    technologies: ['Redis', 'Docker', 'Node.js'],
   },
- 
   {
-    title: 'Capstone Project: Habit Tracker(Python)',
+    title: 'Habit Tracker',
     description: 'Full-stack Habit Tracker built as a Capstone Project. Developed backend logic using Python/Flask and architected a RESTful API to monitor user progress and ensure data persistence.',
     githubLink: 'https://github.com/ggsilva10/Projeto-de-Software.git',
     status: 'Completed' as const,
-    demoLink:  '#'
+    category: 'Back-End' as ProjectCategory,
+    technologies: ['Python', 'Flask', 'PostgreSQL'],
   },
 ];
 
 export default function RoadmapPage() {
   return (
-    <section>
-      <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center">
+    <section className="py-8">
+      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center">
         Project Roadmap
       </h1>
+      
+      <p className="text-center text-zinc-600 dark:text-zinc-400 mb-12 max-w-2xl mx-auto">
+        A collection of my past, current, and future projects.
+      </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {projects.map((project) => (
           <ProjectCard 
-            key={project.title} 
+            key={project.title}
             title={project.title}
             description={project.description}
             githubLink={project.githubLink}
             liveDemoLink={project.liveDemoLink}
             status={project.status}
+            category={project.category}
+            technologies={project.technologies}
+            demoType={(project as any).demoType}
           />
         ))}
-
       </div>
     </section>
   );
