@@ -1,8 +1,18 @@
 import { ProjectCard } from '@/components/ProjectCard';
 
-type ProjectCategory = 'Front-End' | 'Back-End';
+type ProjectCategory = 'Back-End' | 'Front-End';
 
 const projects = [
+    {
+    title: 'Price Tracker API (Microservices)',
+    description: 'An asynchronous e-commerce price tracking system. Built with a microservices architecture using Flask, Celery, and Redis to monitor price drops automatically. It features strategies to bypass anti-bot mechanisms and handles complex database concurrency.',
+    githubLink: 'https://github.com/ggsilva10/price-tracker',
+    liveDemoLink: '/api-docs/price-tracker',
+    demoType: 'swagger' as const,
+    status: 'Completed' as const,
+    category: 'Back-End' as ProjectCategory,
+    technologies: ['Python', 'Flask', 'Celery', 'Redis', 'PostgreSQL', 'Docker'],
+  },
   {
     title: 'FilmFinder',
     description: 'A responsive dashboard for searching and exploring movies, built with Next.js, TypeScript, and Zustand for state management.',
@@ -21,32 +31,6 @@ const projects = [
     status: 'Completed' as const,
     category: 'Back-End' as ProjectCategory,
     technologies: ['Node.js', 'Fastify', 'TypeScript', 'PostgreSQL', 'Docker'],
-  },
-  {
-    title: 'Price Tracker API (Microservices)',
-    description: 'An asynchronous e-commerce price tracking system. Built with a microservices architecture using Flask, Celery, and Redis to monitor price drops automatically. It features strategies to bypass anti-bot mechanisms and handles complex database concurrency.',
-    githubLink: 'https://github.com/ggsilva10/price-tracker',
-    liveDemoLink: '/api-docs/price-tracker',
-    demoType: 'swagger' as const,
-    status: 'Completed' as const,
-    category: 'Back-End' as ProjectCategory,
-    technologies: ['Python', 'Flask', 'Celery', 'Redis', 'PostgreSQL', 'Docker'],
-  },
-  {
-    title: 'BookMark',
-    description: 'A full-stack service scheduling system, integrating the React front-end with the TaskFlow API and business logic.',
-    githubLink: 'https://github.com/ggsilva10/bookmark',
-    status: 'Planned' as const,
-    category: 'Back-End' as ProjectCategory,
-    technologies: ['Next.js', 'React', 'Node.js', 'TypeScript', 'PostgreSQL'],
-  },
-  {
-    title: 'Deep Dive',
-    description: 'Evolving the TaskFlow API. Focus on performace with Redis caching and building a CI/CD pipeline (Docker & GitHub Actions).',
-    githubLink: 'https://github.com/ggsilva10/taskflow-api',
-    status: 'Planned' as const,
-    category: 'Back-End' as ProjectCategory,
-    technologies: ['Redis', 'Docker', 'Node.js'],
   },
   {
     title: 'Habit Tracker',

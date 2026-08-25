@@ -18,7 +18,7 @@ export default function ApiDocsPage() {
       <div className="max-w-7xl mx-auto px-4">
         
         <Link 
-          href="/roadmap" 
+          href="/#roadmap" 
           className="inline-block text-emerald-600 font-medium hover:underline mb-8"
         >
           &larr; Voltar para o Roadmap

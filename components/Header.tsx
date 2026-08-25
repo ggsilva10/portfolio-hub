@@ -17,7 +17,7 @@ export default function Header() {
             <Link href="/" className="text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
               Home
             </Link>
-            <Link href="/roadmap" className="text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+            <Link href="/#roadmap" className="text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
               Roadmap
             </Link>
           </nav>
