@@ -1,4 +1,7 @@
 import { FaChevronDown, FaGithub, FaLinux, FaDocker } from "react-icons/fa";
+import { RoadmapSection } from "@/components/RoadmapSection";
+import ShaderBackground from "@/components/ShaderBackground";
+import { Terminal } from "lucide-react";
 import {
   SiPython,
   SiFlask,
@@ -14,10 +17,9 @@ import {
   SiTailwindcss,
   SiPostman,
   SiGit
-} from "react-icons/si"
+} from "react-icons/si";
 
 export default function Home() {
-
   const backendSkills = [
     { name: 'Python', icon: SiPython },
     { name: 'Flask', icon: SiFlask },
@@ -40,10 +42,11 @@ export default function Home() {
     { name: 'GitHub', icon: FaGithub },
     { name: 'Postman', icon: SiPostman },
   ];
-  return (
 
-    <>
-      <section className="relative min-h-[calc(100vh-150px)] flex flex-col items-center justify-center text-center">
+  return (
+    <div className="relative overflow-hidden">
+      <ShaderBackground />
+      <section className="relative z-10 min-h-[calc(100vh-150px)] flex flex-col items-center justify-center text-center">
 
         <h1 className="text-3xl md:text-6xl font-bold mb-2 text-zinc-900 dark:text-white">
           Hello, I'm Gustavo Gonçalves
@@ -53,17 +56,16 @@ export default function Home() {
           a Full Stack Developer
         </h2>
 
-        <p className="text-lg md:text-xl text-zinc-700 dark:text-zinc-300 mb-8 max-w-2xl">
-          Building end-to-end web solutions, from Back-end (Node.js, Flask) 
-          to Front-end (React, Next.js).
+        <p className="text-lg md:text-xl text-zinc-700 dark:text-zinc-300 leading-relaxed mb-8 max-w-2xl">
+          Full-Stack Software Engineer focused on scalable architectures. I transform complex business rules into high-performance APIs and modern interfaces.
         </p>
 
         <div className="flex gap-4">
           <a
-            href="/roadmap"
+            href="#roadmap"
             className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
           >
-            Roadmap Projects
+            Projects
           </a>
           <a
             href="https://github.com/ggsilva10"
@@ -84,75 +86,85 @@ export default function Home() {
 
       </section>
 
-      <section id="about" className="py-20">
-        <h2 className="text-3xl md:text-5xl font-bold mb-8 text-center text-zinc-900 dark:text-white">
-          My Background
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start px-2 md:px-0">
-          
-          <div className="text-base md:text-lg text-zinc-700 dark:text-zinc-300 space-y-6 leading-loose text-justify hyphens-auto">
-            <p>
-              I'm a developer focused on honing my Full-Stack skills. 
-              My professional experience has given me a solid foundation in 
-              Linux environments, API consumption (Postman), and automation with JavaScript.
-            </p>
-            <p>
-              My academic background includes developing a complete software 
-              application using Python and Flask, where I was responsible for creating 
-              RESTful API endpoints and managing the database.
-            </p>
-            <p>
-              This portfolio is my technical roadmap. The goal is to demonstrate my 
-              evolution in the React, Node.js, and TypeScript ecosystem by building 
-              projects of increasing complexity.
+      <section id="about" className="relative z-10 w-full max-w-7xl mx-auto px-6 py-24 flex flex-col gap-16">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto space-y-4">
+          <h1 className="text-4xl md:text-5xl text-white font-bold tracking-tight">
+            About <span className="text-emerald-400">Me</span>
+          </h1>
+          <div className="w-16 h-1 bg-emerald-400/30 rounded-full"></div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          {/* Coluna de Texto (Mantendo o copy profissional) */}
+          <div className="lg:col-span-6 flex flex-col gap-6 p-8 rounded-2xl bg-zinc-900/40 backdrop-blur-md border border-zinc-800/50 shadow-2xl relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            
+            <p className="text-zinc-300 leading-relaxed text-justify">
+              I'm a Full-Stack Developer specialized in the JavaScript/TypeScript and Python ecosystems. With practical experience in developing and maintaining corporate systems and analytical tools, I work from database modeling to building dynamic user interfaces.
             </p>
             
-            <div className="text-left">
+            <p className="text-zinc-300 leading-relaxed text-justify mt-2">
+              My focus is on designing resilient systems, efficient APIs, and seamless integrations. I am passionate about building projects of increasing complexity, utilizing tools like Node.js, Next.js, Fastify, and microservices architectures to solve real-world problems.
+            </p>
+            
+            <div className="mt-8 pt-6 border-t border-zinc-800/50">
               <a 
-                href="https://www.linkedin.com/in/ggsilva10/"
+                href="https://www.linkedin.com/in/ggsilva10/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors font-bold mt-2"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-400 hover:text-emerald-300 transition-colors group/link"
               >
-                Connect with me on LinkedIn →
+                Connect with me on LinkedIn
+                <span className="transform group-hover/link:translate-x-1 transition-transform">→</span>
               </a>
             </div>
           </div>
-          <div>
-            <h3 className="text-2xl font-bold mb-4 text-emerald-600 dark:text-emerald-400 mt-8 md:mt-0">
-              Technical Toolkit
-            </h3>
-            
-            <h4 className="text-lg font-semibold mb-3 text-zinc-800 dark:text-zinc-200">Back-End & DevOps</h4>
-            <div className="flex flex-wrap gap-3 mb-6">
-              {backendSkills.map((skill) => (
-                <span 
-                  key={skill.name} 
-                  className="flex items-center gap-2 bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 py-2 px-4 rounded-lg font-medium text-sm hover:bg-zinc-300 dark:hover:bg-zinc-700 transition-colors cursor-default"
-                >
-                  <skill.icon className="text-lg" />
-                  {skill.name}
-                </span>
-              ))}
+
+          {/* Coluna do Toolkit */}
+          <div className="lg:col-span-6 flex flex-col gap-8">
+            <div className="flex items-center gap-3 mb-2">
+              <Terminal className="text-emerald-400 w-8 h-8"/>
+              <h2 className="text-2xl text-emerald-400 font-bold tracking-tight">Technical Toolkit</h2>
             </div>
 
-            <h4 className="text-lg font-semibold mb-3 text-zinc-800 dark:text-zinc-200">Front-End & Tools</h4>
-            <div className="flex flex-wrap gap-3">
-              {frontendSkills.map((skill) => (
-                <span 
-                  key={skill.name} 
-                  className="flex items-center gap-2 bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 py-2 px-4 rounded-lg font-medium text-sm hover:bg-zinc-300 dark:hover:bg-zinc-700 transition-colors cursor-default"
-                >
-                  <skill.icon className="text-lg" />
-                  {skill.name}
-                </span>
-              ))}
+            <div className="flex flex-col gap-8">
+              {/* Back-End & DevOps */}
+              <div className="flex flex-col gap-4">
+                <h3 className="text-zinc-100 uppercase tracking-widest text-sm flex items-center gap-2 font-semibold">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
+                  Back-End & DevOps
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {backendSkills.map((tech) => (
+                    <span key={tech.name} className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900/80 backdrop-blur-sm border border-zinc-800/80 text-sm text-zinc-300 hover:text-emerald-400 hover:border-emerald-500/50 hover:shadow-[0_0_15px_rgba(78,222,163,0.15)] transition-all cursor-default">
+                      <tech.icon className="text-lg" />
+                      {tech.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Front-End & Tools */}
+              <div className="flex flex-col gap-4">
+                <h3 className="text-zinc-100 uppercase tracking-widest text-sm flex items-center gap-2 font-semibold">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
+                  Front-End & Tools
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {frontendSkills.map((tech) => (
+                    <span key={tech.name} className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900/80 backdrop-blur-sm border border-zinc-800/80 text-sm text-zinc-300 hover:text-emerald-400 hover:border-emerald-500/50 hover:shadow-[0_0_15px_rgba(78,222,163,0.15)] transition-all cursor-default">
+                      <tech.icon className="text-lg" />
+                      {tech.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </section>
-    </>
+
+      <RoadmapSection />
+    </div>
   );
 }

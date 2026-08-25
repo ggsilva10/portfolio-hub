@@ -1,0 +1,31 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Price Tracker API",
+    "description": "Sistema assíncrono de rastreamento de preços com Flask, Celery e Redis.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/track": {
+      "post": {
+        "summary": "Cadastra uma nova URL para rastreamento",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "url": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": { "description": "Tarefa de extração enviada para a fila do Redis" }
+        }
+      }
+    }
+  }
+}
