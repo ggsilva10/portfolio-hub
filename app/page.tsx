@@ -80,7 +80,7 @@ export default function Home() {
         </div>
         <a
           href="#about"
-          className="absolute bottom-10 text-zinc-400 dark:text-zinc-600 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300"
+          className="hidden md:block absolute bottom-10 text-zinc-400 dark:text-zinc-600 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300"
           aria-label="Scroll down to About"
         >
           <ChevronDown className="w-8 h-8 animate-bounce" />
@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       <section id="about" className="relative z-10 w-full min-h-screen flex flex-col justify-between items-center pt-24 pb-6">
-        <div className="w-full flex justify-center mt-4">
+        <div className="w-full hidden md:flex justify-center mt-4">
           <a 
             href="#" 
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
@@ -178,7 +178,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="w-full flex justify-center">
+        <div className="w-full hidden md:flex justify-center">
           <a 
             href="#projects" 
             className="text-zinc-400 dark:text-zinc-600 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300"

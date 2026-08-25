@@ -65,7 +65,7 @@ const projects = [
 export function ProjectsSection() {
   return (
     <section id="projects" className="py-20">
-      <div className="w-full flex justify-center mb-6 pt-4">
+      <div className="w-full hidden md:flex justify-center mb-6 pt-4">
         <a 
           href="#about" 
           className="text-zinc-400 dark:text-zinc-600 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300"
