@@ -1,10 +1,10 @@
 "use client";
 
 import SwaggerUI from "swagger-ui-react";
-// @ts-expect-error: A biblioteca não exporta os tipos do CSS, mas o bundler do Next.js resolve
 import "swagger-ui-react/swagger-ui.css";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+
 
 export default function ApiDocsPage() {
   const params = useParams();
