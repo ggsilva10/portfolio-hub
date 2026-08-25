@@ -106,7 +106,7 @@ export const ProjectCard = ({
   const finalTechs = techStack || technologies || [];
 
   return (
-    <div className="flex flex-col bg-[#14151c] rounded-2xl border border-[#272a38] overflow-hidden shadow-2xl h-full group">
+    <div className="flex flex-col bg-white dark:bg-[#14151c] rounded-2xl border border-zinc-200 dark:border-[#272a38] overflow-hidden shadow-2xl h-full group">
       
       {/* Banner Vetorial do Topo */}
       <div className={`relative w-full overflow-hidden border-b p-5 sm:p-6 flex flex-col justify-between min-h-[175px] sm:min-h-[190px] ${GRADIENT_MAP[gradientTheme || 'purple-indigo'] || 'bg-zinc-950 border-zinc-800/80'}`}>
@@ -136,26 +136,26 @@ export const ProjectCard = ({
       </div>
 
       {/* Área de Conteúdo: flex-grow garante que o rodapé seja empurrado para alinhar cards lado a lado */}
-      <div className="p-6 sm:p-8 flex flex-col flex-grow">
+      <div className="p-6 sm:p-8 flex flex-col flex-grow bg-white dark:bg-transparent">
         
         <div className="mb-6">
           {/* Categoria e Status */}
           <div className="flex items-center justify-between mb-4">
-            <span className="text-[11px] font-bold tracking-widest text-purple-400 uppercase font-mono">{category}</span>
+            <span className="text-[11px] font-bold tracking-widest text-purple-600 dark:text-purple-400 uppercase font-mono">{category}</span>
             <span className="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-emerald-950/80 text-emerald-300 border border-emerald-800/60">{status}</span>
           </div>
           
-          <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight mb-3">
+          <h3 className="text-xl sm:text-2xl font-extrabold text-zinc-900 dark:text-white tracking-tight mb-3">
             {title}
           </h3>
-          <p className="text-slate-300 text-sm leading-relaxed mb-6">
+          <p className="text-zinc-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
             {description}
           </p>
 
           {/* Badges de Tecnologias */}
           <div className="flex flex-wrap gap-2">
             {finalTechs.map((tech) => (
-              <span key={tech} className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#1c1e28] border border-slate-800 text-xs text-slate-200">
+              <span key={tech} className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-100 dark:bg-[#1c1e28] border border-zinc-200 dark:border-slate-800 text-xs text-zinc-700 dark:text-slate-200">
                 
                 {/* Ícones Customizados */}
                 {tech === 'Knex.js' && (
@@ -184,7 +184,7 @@ export const ProjectCard = ({
         </div>
 
         {/* Rodapé Fixo na base */}
-        <div className="mt-auto pt-5 border-t border-[#272a38] flex flex-wrap items-center justify-between gap-4">
+        <div className="mt-auto pt-5 border-t border-zinc-200 dark:border-[#272a38] flex flex-wrap items-center justify-between gap-4">
           {/* Feature Tag c/ Ícone Shield Exato */}
           <div className="flex items-center gap-2">
             {title === 'TaskFlow API' ? (
@@ -192,7 +192,7 @@ export const ProjectCard = ({
             ) : (
               <Zap className="w-4 h-4 text-emerald-400 flex-shrink-0"/>
             )}
-            <span className="text-xs font-semibold text-zinc-400 leading-tight max-w-[100px]">
+            <span className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 leading-tight max-w-[100px]">
               {featureTag}
             </span>
           </div>
@@ -209,7 +209,7 @@ export const ProjectCard = ({
                 href={finalGithub}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-zinc-300 hover:text-emerald-400 transition-colors text-xs font-medium"
+                className="flex items-center gap-1 text-zinc-500 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400 transition-colors text-xs font-medium"
               >
                 <FaGithub className="text-sm" />
                 GitHub
@@ -222,8 +222,8 @@ export const ProjectCard = ({
                   rel="noopener noreferrer"
                   className={`flex items-center gap-1 transition-colors text-xs font-medium
                     ${demoType === 'swagger' 
-                      ? 'text-emerald-400 hover:text-emerald-300' 
-                      : 'text-zinc-300 hover:text-emerald-400'}`}
+                      ? 'text-emerald-600 hover:text-emerald-500 dark:text-emerald-400 dark:hover:text-emerald-300' 
+                      : 'text-zinc-500 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400'}`}
                 >
                   {demoType === 'swagger' ? <SiSwagger className="text-sm" /> : <FaPlay className="text-[10px]" />}
                   {demoType === 'swagger' ? 'Swagger UI' : 'Live Demo'}

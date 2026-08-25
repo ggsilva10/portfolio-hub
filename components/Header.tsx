@@ -17,8 +17,11 @@ export default function Header() {
             <Link href="/" className="text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
               Home
             </Link>
-            <Link href="/#roadmap" className="text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
-              Roadmap
+            <Link href="/#about" className="text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+              About
+            </Link>
+            <Link href="/#projects" className="text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+              Projects
             </Link>
           </nav>
           <ThemeSwitch/>

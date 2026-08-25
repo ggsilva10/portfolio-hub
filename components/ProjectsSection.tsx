@@ -1,4 +1,5 @@
 import { ProjectCard } from '@/components/ProjectCard';
+import { ChevronUp } from 'lucide-react';
 
 type ProjectCategory = 'Front-End' | 'Back-End';
 
@@ -61,15 +62,24 @@ const projects = [
   }
 ];
 
-export function RoadmapSection() {
+export function ProjectsSection() {
   return (
-    <section id="roadmap" className="py-20">
+    <section id="projects" className="py-20">
+      <div className="w-full flex justify-center mb-6 pt-4">
+        <a 
+          href="#about" 
+          className="text-zinc-400 dark:text-zinc-600 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300"
+          aria-label="Scroll up to About"
+        >
+          <ChevronUp className="w-8 h-8 animate-bounce" />
+        </a>
+      </div>
       <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center">
-        Project Roadmap
+        Projects
       </h1>
       
       <p className="text-center text-zinc-600 dark:text-zinc-400 leading-relaxed mb-12 max-w-2xl mx-auto">
-        A collection of my past, current, and future projects.
+        A collection of my recent work.
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-7xl mx-auto px-4">

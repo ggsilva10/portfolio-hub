@@ -28,7 +28,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header /> 
           
-          <main className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 flex-grow">
+          <main className="w-full flex-grow">
             {children}
           </main>
           
