@@ -13,7 +13,7 @@ import {
   SiReact,
   SiNextdotjs,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiTailwindcss,
   SiPostman,
   SiGit
@@ -36,7 +36,7 @@ export default function Home() {
     { name: 'React', icon: SiReact },
     { name: 'Next.js', icon: SiNextdotjs },
     { name: 'HTML5', icon: SiHtml5 },
-    { name: 'CSS3', icon: SiCss3 },
+    { name: 'CSS3', icon: SiCss },
     { name: 'Tailwind', icon: SiTailwindcss },
     { name: 'Git', icon: SiGit },
     { name: 'GitHub', icon: FaGithub },
