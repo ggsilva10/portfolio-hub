@@ -1,6 +1,6 @@
 # 🚀 Full-Stack Portfolio (portfolio-hub)
 
-This is the repository for my personal portfolio, designed and built to be the central hub of my journey as a Full-Stack Developer.
+This is the repository for my personal portfolio, designed and built to be the central hub of my career as a Full-Stack Software Engineer.
 
 [![View Live](https://img.shields.io/badge/View%20Live-Vercel-black?style=for-the-badge&logo=vercel)](https://portfolio-hub-blond-three.vercel.app/)
 
@@ -8,41 +8,27 @@ This is the repository for my personal portfolio, designed and built to be the c
 
 ## 🎯 About The Project
 
-This is not a static portfolio. The main goal of this project is to serve as a **Public Roadmap** of my learning. The "Project Roadmap" page documents the projects I am building, my progress, and the technologies I am mastering.
+This portfolio is a showcase of my consolidated work, highlighting scalable architectures, efficient APIs, and modern user interfaces. It transitions away from a simple study roadmap to present production-ready applications and real-world problem-solving.
 
-The design is fully **responsive** (Mobile-First) and features a **Light/Dark Mode** toggle to ensure a great viewing experience in any lighting condition. The structure follows modern Next.js App Router best practices.
+The application is built as a highly optimized **Single Page Experience**, featuring smooth vertical scrolling, a true full-screen layout, and a carefully crafted **Light/Dark Mode** tailored for readability and visual impact across all devices.
 
-## 📸 Demo & Screenshots
+### ✨ Key Features
+- **Responsive & Mobile-First:** Fluid design that adapts from desktop dashboard views to clean, touch-friendly mobile layouts.
+- **Adaptive Theming:** Seamless transition between dark and light modes with adaptive contrast for cards and typography.
+- **Smooth Navigation:** Interactive, bidirectional scroll anchors for an intuitive user journey.
 
-Here is a preview of the site in action, featuring dark mode toggle:
-
-### Home Page (Demo):
-<img src=".github/screenshots/home-preview.gif" alt="Home Page Animated Demo" width="80%">
-
-### Project Roadmap (Demo):
-<img src=".github/screenshots/roadmap-preview.gif" alt="Project Roadmap Animated Demo" width="80%">
-
----
 
 ## 🛠️ Tech Stack
 
-This project was built from scratch using the following technologies:
+This project was built leveraging the following modern ecosystem:
 
-* **Framework:** [Next.js (v16)](https://nextjs.org/) (with App Router)
+* **Framework:** [Next.js (v16)](https://nextjs.org/) (App Router & Turbopack)
 * **Language:** [TypeScript](https://www.typescriptlang.org/)
 * **Styling:** [TailwindCSS (v4)](https://tailwindcss.com/)
 * **Components:** [React](https://reactjs.org/)
 * **Theme (Dark Mode):** [next-themes](https://github.com/pacocoursey/next-themes)
-* **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+* **Icons:** [React Icons](https://react-icons.github.io/react-icons/) & [Lucide React](https://lucide.dev/)
 * **Deployment:** [Vercel](https://vercel.com/)
-
----
-
-## 🗺️ Project Roadmap
-
-To see the full list of projects I'm developing (Back-end, Front-end, and Full-Stack), visit the roadmap page on the live site.
-
-* **[View the Project Roadmap](https://portfolio-hub-blond-three.vercel.app/roadmap)**
 
 ---
 
