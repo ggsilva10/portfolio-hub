@@ -3,7 +3,7 @@
 import { FaGithub, FaLinux, FaDocker } from "react-icons/fa";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import ShaderBackground from "@/components/ShaderBackground";
-import { Terminal, ChevronDown, ChevronUp } from "lucide-react";
+import { Terminal, ChevronDown } from "lucide-react";
 import {
   SiPython,
   SiFlask,
@@ -88,17 +88,7 @@ export default function Home() {
 
       </section>
 
-      <section id="about" className="relative z-10 w-full min-h-screen flex flex-col justify-between items-center pt-24 pb-6">
-        <div className="w-full hidden md:flex justify-center mt-4">
-          <a 
-            href="#" 
-            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-            className="text-zinc-400 dark:text-zinc-600 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300"
-            aria-label="Scroll up to Home"
-          >
-            <ChevronUp className="w-8 h-8 animate-bounce" />
-          </a>
-        </div>
+      <section id="about" className="relative z-10 w-full min-h-screen flex flex-col justify-center items-center pt-24 pb-6">
 
         <div className="flex-1 flex flex-col justify-center items-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-8">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto space-y-4">
@@ -176,16 +166,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="w-full hidden md:flex justify-center">
-          <a 
-            href="#projects" 
-            className="text-zinc-400 dark:text-zinc-600 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300"
-            aria-label="Scroll down to projects"
-          >
-            <ChevronDown className="w-8 h-8 animate-bounce" />
-          </a>
         </div>
       </section>
 
